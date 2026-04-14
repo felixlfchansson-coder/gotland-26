@@ -1,0 +1,129 @@
+:root {
+  /* 🎨 Färger */
+   --color-bg: #f4efe6;
+  --color-surface: #ffffff;
+  --color-primary: #6b8f71;
+  --color-secondary: #4f8261;
+  --color-accent: #e6a85c;
+  --color-text: #2a2a2a;
+
+  --font-main: Arial, sans-serif;
+  --font-heading: Georgia, serif;
+
+  /* 📏 Storlekar */
+  --radius: 10px;
+  --spacing: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+header {
+  background-color: var(--color-surface);
+  padding: var(--spacing);
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+h1 {
+  margin: 0 0 0.5rem 0;
+  font-family: var(--font-heading);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgba(183, 235, 201, 0.849);
+  background-color: var(--color-secondary);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius);
+  transition: 0.2s;
+}
+
+nav a:hover {
+  background-color: var(--color-accent);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.start-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.start-links a,
+.start-links button {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #dfe8d8;
+  color: #222;
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+#meaningless-btn.burning {
+  background: #ff4d4d;
+  color: white;
+  box-shadow:
+    0 0 10px #ff4d4d,
+    0 0 20px #ff1a1a,
+    0 0 40px #ff0000;
+  animation: burnPulse 1s infinite;
+}
+
+@keyframes burnPulse {
+  0% {
+    box-shadow:
+      0 0 5px #ff4d4d,
+      0 0 10px #ff1a1a;
+  }
+  50% {
+    box-shadow:
+      0 0 20px #ff4d4d,
+      0 0 40px #ff0000,
+      0 0 60px #ff0000;
+  }
+  100% {
+    box-shadow:
+      0 0 5px #ff4d4d,
+      0 0 10px #ff1a1a;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  nav {
+    flex-direction: column;
+  } 
+}
