@@ -1,7 +1,7 @@
 let clickCount = 0;
 let holdTimer;
 
-const button = document.querySelector("#meaningless-btn");
+const button = document.querySelector("#useless-btn");
 
 // 🖱️ Klick
 button.addEventListener("click", () => {
