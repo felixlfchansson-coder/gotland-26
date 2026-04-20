@@ -22,11 +22,29 @@
     <a class="nav-link" aria-label="Quiz" href="quiz.html">Quiz</a>
   </nav>
 </header>
-  <main>
-    <h2>Välkommen</h2>
-    <p>Här börjar resan.</p>
+ <main class="wrapper">
+
+    <!-- HEADER -->
+    <section class="panel">
+      <h1>🐑 Gotlandsbaggen berättar</h1>
+      <p>Tryck på knappen för att få en fakta (eller något märkligt).</p>
+    </section>
+
+    <!-- FAKTA PANEL -->
+    <section class="panel">
+
+      <div class="fact-box" id="fact">
+        Tryck på knappen 👇
+      </div>
+
+      <button class="big-btn" onclick="getFact()">
+        Ge mig en fakta
+      </button>
+
+    </section>
+
   </main>
 
-  <script src="scripts/main.js"></script>
+  <script src="scripts/fact.js"></script>
 </body>
 </html>

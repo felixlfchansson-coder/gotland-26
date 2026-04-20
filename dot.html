@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gotlandsbaggar: Glasskriget</title>
+  <link rel="stylesheet" href="styles/glasskrig.css">
+
+</head>
+<body>
+  <div class="wrap">
+    <section class="panel">
+      <h1>Gotlandsbaggar: Glasskriget</h1>
+      <p class="sub">Två gotlandsbaggar står på ömtålig mark och skjuter glasskulor på varandra. Först till kollaps förlorar. Det här är första grunden.</p>
+    </section>
+
+    <section class="panel">
+      <div id="startMenu" class="start-menu">
+  <h2>Välj hur glasskriget ska börja</h2>
+
+  <div class="menu-group">
+    <label for="mapSelect">Bana</label>
+    <select id="mapSelect">
+      <option value="rauk">Raukbana</option>
+      <option value="farm">Bondgård</option>
+      <option value="bus">Buss</option>
+    </select>
+  </div>
+
+  <div class="menu-group">
+    <label for="projectileColor">Glassfärg</label>
+    <select id="projectileColor">
+      <option value="pink">Jordgubb</option>
+      <option value="blue">Blåbär</option>
+      <option value="yellow">Vanilj</option>
+      <option value="brown">Choklad</option>
+      <option value="green">Pistage</option>
+    </select>
+  </div>
+
+  <button id="startGameBtn">Starta spelet</button>
+</div>
+
+<div id="countdownOverlay" class="countdown hidden">3</div>
+      <canvas id="game" width="900" height="500" aria-label="Spelplan"></canvas>
+
+      <div class="hud">
+        <div class="chip" id="turnLabel">Tur: Blå bagge</div>
+        <div class="chip" id="angleLabel">Vinkel: 45°</div>
+        <div class="chip" id="powerLabel">Kraft: 14</div>
+        <div class="chip" id="hpLabel">HP: 100 / 100</div>
+      </div>
+
+      <div class="controls">
+        <button id="angleDown">Vinkel −</button>
+        <button id="angleUp">Vinkel +</button>
+        <button id="powerDown">Kraft −</button>
+        <button id="powerUp">Kraft +</button>
+        <button id="fireBtn">Skjut glasskula</button>
+      </div>
+
+      <div class="log" id="log">Blå gotlandsbaggen börjar. Försök att inte förstöra hela ön.</div>
+    </section>
+  </div>
+  <script src="scripts/glasskrig.js"></script>
+</body>
+</html>

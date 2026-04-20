@@ -1,3 +1,4 @@
+
 :root {
   /* 🎨 Färger */
    --color-bg: #f4efe6;
@@ -149,6 +150,49 @@ section {
   text-decoration: none;
   font: inherit;
   cursor: pointer;
+}
+/* =========================
+   FAKTA-SIDA
+========================= */
+
+.fact-box {
+  background: #f4f8f4;
+  border-radius: 16px;
+  padding: 1.2rem;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  min-height: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.big-btn {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 16px;
+  border: none;
+
+  font-size: 1.1rem;
+  font-weight: bold;
+
+  background: #7fb77e;
+  color: white;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.big-btn:hover {
+  background: #6aa86a;
+}
+
+.big-btn:active {
+  transform: scale(0.97);
 }
 
 .useless-container {
